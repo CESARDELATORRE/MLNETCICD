@@ -10,7 +10,6 @@ using System.Linq;
 using Microsoft.ML;
 using DetoxModel.Model.DataModels;
 
-
 namespace DetoxModel.ConsoleApp
 {
     class Program
@@ -38,7 +37,6 @@ namespace DetoxModel.ConsoleApp
             ModelOutput predictionResult = predEngine.Predict(sampleData);
 
             Console.WriteLine($"Single Prediction --> Actual value: {sampleData.Label} | Predicted value: {predictionResult.Prediction}");
-
         }
 
         // Method to load single row of data to try a single prediction
