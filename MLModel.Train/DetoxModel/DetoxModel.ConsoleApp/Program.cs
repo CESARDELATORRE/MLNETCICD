@@ -31,29 +31,20 @@ namespace DetoxModel.ConsoleApp
             var predEngine = mlContext.Model.CreatePredictionEngine<ModelInput, ModelOutput>(mlModel);
 
             // Create sample data to do a single prediction with it 
-            ModelInput sampleData = CreateSingleDataSample(mlContext, GetAbsolutePath(DATA_FILEPATH));
+            string inputSampleText = "ML.NET is awesome";
+            ModelInput sampleData = CreateSingleDataSample(inputSampleText);
 
             // Try a single prediction
             ModelOutput predictionResult = predEngine.Predict(sampleData);
 
-            Console.WriteLine($"Single Prediction --> Actual value: {sampleData.Label} | Predicted value: {predictionResult.Prediction}");
+            Console.WriteLine($"Single Prediction --> Prediction for '{inputSampleText}' should be toxic = False | Predicted value was toxic = {predictionResult.Prediction}");
         }
 
-        // Method to load single row of data to try a single prediction
-        // You can change this code and create your own sample data here (Hardcoded or from any source)
-        private static ModelInput CreateSingleDataSample(MLContext mlContext, string dataFilePath)
+        // Here I create your my sample hard-coded data (Could be coming from an end-user app)
+        private static ModelInput CreateSingleDataSample(string inputTextStatement)
         {
-            // Read dataset to get a single row for trying a prediction          
-            IDataView dataView = mlContext.Data.LoadFromTextFile<ModelInput>(
-                                            path: dataFilePath,
-                                            hasHeader: true,
-                                            separatorChar: '\t',
-                                            allowQuoting: true,
-                                            allowSparse: false);
-
             // Here (ModelInput object) you could provide new test data, hardcoded or from the end-user application, instead of the row from the file.
-            ModelInput sampleForPrediction = mlContext.Data.CreateEnumerable<ModelInput>(dataView, false)
-                                                                        .First();
+            ModelInput sampleForPrediction = new ModelInput { Comment = inputTextStatement };
             return sampleForPrediction;
         }
 
