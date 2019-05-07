@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DetoxModel.ConsoleApp", "ML
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DetoxModel.Model", "MLModel.Train\DetoxModel\DetoxModel.Model\DetoxModel.Model.csproj", "{F98C81A8-8695-4FFA-B40D-7D4B667D1D28}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DetoxModel.UnitTests", "MLModel.Train\DetoxModel.UnitTests\DetoxModel.UnitTests.csproj", "{79BFF28E-C8D7-4FDC-9BA1-6CA01966B176}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{F98C81A8-8695-4FFA-B40D-7D4B667D1D28}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F98C81A8-8695-4FFA-B40D-7D4B667D1D28}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F98C81A8-8695-4FFA-B40D-7D4B667D1D28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79BFF28E-C8D7-4FDC-9BA1-6CA01966B176}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79BFF28E-C8D7-4FDC-9BA1-6CA01966B176}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79BFF28E-C8D7-4FDC-9BA1-6CA01966B176}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79BFF28E-C8D7-4FDC-9BA1-6CA01966B176}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -39,6 +45,7 @@ Global
 		{B3BB848E-ECB8-420C-95C3-3A23F11B8CE6} = {8CD231C5-F413-4020-B068-193E287E6312}
 		{F0934353-9ABE-4448-8FAB-0FD26F9F733A} = {257E78A9-209E-46EF-A7C9-125858C21E75}
 		{F98C81A8-8695-4FFA-B40D-7D4B667D1D28} = {257E78A9-209E-46EF-A7C9-125858C21E75}
+		{79BFF28E-C8D7-4FDC-9BA1-6CA01966B176} = {257E78A9-209E-46EF-A7C9-125858C21E75}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {89DE51F9-D89D-4E89-AA92-AB5E78B91929}
