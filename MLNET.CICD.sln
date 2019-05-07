@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scalable.WebAPI", "Scalable
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "App.WebAPI", "App.WebAPI", "{8CD231C5-F413-4020-B068-193E287E6312}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Train.Console", "Train.Console", "{257E78A9-209E-46EF-A7C9-125858C21E75}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Train.Validate.UnitTests", "Train.Validate.UnitTests", "{257E78A9-209E-46EF-A7C9-125858C21E75}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DetoxModel.ConsoleApp", "MLModel.Train\DetoxModel\DetoxModel.ConsoleApp\DetoxModel.ConsoleApp.csproj", "{F0934353-9ABE-4448-8FAB-0FD26F9F733A}"
 EndProject

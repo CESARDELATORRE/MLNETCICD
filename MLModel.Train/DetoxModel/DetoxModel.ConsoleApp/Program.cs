@@ -16,7 +16,7 @@ namespace DetoxModel.ConsoleApp
     class Program
     {
         //Machine Learning model to load and use for predictions
-        private const string MODEL_FILEPATH = @"MLModel.zip";
+        private const string MODEL_FILEPATH = @"../../../../DetoxModel.Model/MLModel.zip";
 
         //Dataset to use for predictions 
         private const string DATA_FILEPATH = @"../../../../../Data/wikiDetoxAnnotated40kRows.tsv";
